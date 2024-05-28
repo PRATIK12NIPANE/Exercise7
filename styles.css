@@ -1,0 +1,71 @@
+/* Additional CSS for styling */
+
+  /* Custom styles for navbar */
+  .navbar {
+    background-color: #007bff; /* Navbar background color */
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #000000 !important; /* Navbar text color */
+  }
+
+  .navbar-brand:hover,
+  .navbar-nav .nav-link:hover {
+    color: #00fbff !important; /* Navbar text color on hover */
+  }
+
+  /* Active page indicator */
+  .nav-item.active .nav-link {
+    color: #00fbff;
+    font-weight: bold; /* Bold font for active page */
+  }
+
+
+/* Carousel height */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Customize carousel indicators */
+  .carousel-indicators li {
+    background-color: #000;
+  }
+  
+  /* Lightbox for gallery */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 5%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

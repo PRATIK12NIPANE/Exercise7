@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+  </head>
+  <body>
+   
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">Your Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index.html' ? 'active' : ''; ?>" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'about.html' ? 'active' : ''; ?>" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'products.html' ? 'active' : ''; ?>" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.html' ? 'active' : ''; ?>" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'gallery.html' ? 'active' : ''; ?>" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+    </div>
+  </nav>
+
+<!-- Header -->
+<header>
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Our E-Commerce Store</h1>
+    <p class="lead">Find the best products here!</p>
+    <hr class="my-4">
+    <!-- Add any additional content here -->
+  </div>
+</header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2 class="text-center">About Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Our Story</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id quam quis eros semper congue. Nulla facilisi. Cras sed consequat sapien. Ut aliquam felis at magna congue, in sagittis eros ultricies. Phasellus bibendum nunc ut posuere.</p>
+        <p>Proin nec mi justo. Aenean nec lectus auctor, pulvinar velit ac, eleifend quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce non diam non felis faucibus mattis nec eget justo. Vivamus vitae justo non purus vehicula lacinia ac quis diam.</p>
+        <p>Integer euismod metus eget orci placerat tempus. Maecenas accumsan consequat diam, id consequat justo cursus sed. Nam non libero sed dui vestibulum gravida. Phasellus vitae eros in tellus malesuada varius. Integer vel condimentum sapien.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide high-quality products and excellent customer service to our customers. We strive to offer a wide range of products to meet the needs of our diverse customer base.</p>
+        <h3>Our Vision</h3>
+        <p>Our vision is to become a leading e-commerce platform known for its reliability, innovation, and customer satisfaction. We aim to continually improve and expand our offerings to better serve our customers.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light">
+    <!-- Add footer content here -->
+    <p>&copy; 2024 Your Company</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
