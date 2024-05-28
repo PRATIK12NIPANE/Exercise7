@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+  </head>
+  <body>
+   
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">Your Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'index.html' ? 'active' : ''; ?>" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'about.html' ? 'active' : ''; ?>" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'products.html' ? 'active' : ''; ?>" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.html' ? 'active' : ''; ?>" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'gallery.html' ? 'active' : ''; ?>" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+    </div>
+  </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Our E-Commerce Store</h1>
+        <p class="lead">Find the best products here!</p>
+        <hr class="my-4">
+        <!-- Add any additional content here -->
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h2>Our Products</h2>
+      <!-- Add product listing here -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/mobile1.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">Sleek and compact, our Mobile 1 offers cutting-edge features and seamless connectivity, ideal for staying productive and entertained on the move.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/mobile2.png" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">Experience the ultimate in mobile innovation with our Mobile 2, boasting a stunning design, powerful performance, and advanced camera technology for capturing every moment in detail.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/laptop.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Slim and stylish, our Laptop 1 combines powerful performance with portability, making it perfect for professionals on the go.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/laptop2.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">DSlim and stylish, our Laptop 1 combines powerful performance with portability, making it perfect for professionals on the go.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/watch1.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Elegantly crafted and meticulously designed, our Watch 1 blends timeless style with modern functionality, offering the perfect accessory for any occasion.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/watch2.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Experience luxury and precision with our Watch 2, featuring premium materials, sophisticated craftsmanship, and advanced timekeeping technology, designed to elevate your style.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+      <!-- Add footer content here -->
+      <p>&copy; 2024 Your Company</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+      aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never
+                  share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control"
+                  id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
